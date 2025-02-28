@@ -54,8 +54,8 @@ Here is an example configuration (`config/config.yaml`):
 ```yaml
 bag_unpack:
   ros__parameters:
-    input_bag_path: "/path/to/your/input.bag"
-    output_bag_path: "/path/to/your/output.bag"
+    input_bag_path: "/path/to/your/bag_input_dir"
+    output_bag_path: "/path/to/your/bag_output_dir"
     included_topics:
         - "/camera/image"
         - "/imu/data"
