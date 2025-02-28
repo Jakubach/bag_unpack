@@ -1,0 +1,43 @@
+bag_unpack:
+  ros__parameters:
+    input_bag_path: "/home/jakub/ros2_ws/src/bag_unpack/bag_unpack/my_bag"
+    output_bag_path: "/home/jakub/ros2_ws/src/bag_unpack/bag_unpack/my_bag/filtered0"
+    included_topics: [
+      "/aros_base_controller/cmd_vel_out",
+      "/aros_base_controller/cmd_vel_unstamped",
+      "/aros_base_controller/odom",
+      "/aros_base_controller/transition_event",
+      "/battery/state",
+      "/clock",
+      "/cmd_vel",
+      "/diagnostics",
+      "/dynamic_joint_states",
+      "/imu/data",
+      "/joint_state_broadcaster/transition_event",
+      "/joint_states",
+      "/scan",
+      "/link_states",
+      "/model_states",
+      "/map",
+      "/map_server/transition_event",
+      "/map_updates",
+      "/odom",
+      "/parameter_events",
+      "/performance_metrics",
+      "/promixity/front/left/range",
+      "/promixity/front/middle/left/range",
+      "/promixity/front/middle/right/range",
+      "/promixity/front/right/range",
+      "/promixity/rear/left/range",
+      "/promixity/rear/middle/range",
+      "/promixity/rear/right/range",
+      "/robot_description",
+      "/rosout",
+      "/set_pose",
+      "/tf",
+      "/tf_static"
+    ]
+    excluded_tf: [
+      "map:2:odom",
+    ]
+
