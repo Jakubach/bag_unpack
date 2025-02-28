@@ -10,12 +10,12 @@ setup(
     packages=[package_name],
     install_requires=['setuptools'],
     zip_safe=True,
-    author='Your Name',
-    author_email='your_email@example.com',
-    maintainer='Your Name',
-    maintainer_email='your_email@example.com',
-    description='ROS2 Bag Reader Node',
-    license='Your License',
+    author='Jakub Chudziński',
+    author_email='jakubach@gmail.com',
+    maintainer='Jakub Chudziński',
+    maintainer_email='jakubach@gmail.com',
+    description='ROS2 utility package for excluding specific transformations and selecting topics for output',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
