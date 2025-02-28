@@ -15,7 +15,7 @@ setup(
     maintainer='Jakub Chudziński',
     maintainer_email='jakubach@gmail.com',
     description='ROS2 utility package for excluding specific transformations and selecting topics for output',
-    license='TODO: License declaration',
+    license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
