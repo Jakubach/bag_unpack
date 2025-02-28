@@ -33,10 +33,20 @@ class BagUnpack(Node):
         if not os.path.isdir(self.bag_path):
             self.get_logger().error(f"Input directory does not exist: {self.bag_path}")
             self._exit = True
+            return
         
         if os.path.isdir(self.output_bag_path):
             self.get_logger().error(f"Output directory already exists: {self.output_bag_path}")
             self._exit = True
+            return
+
+        db3_files = [file for file in os.listdir(self.bag_path) if file.endswith('.db3')]
+        yaml_files = [file for file in os.listdir(self.bag_path) if file.endswith('.yaml')]
+
+        if len(db3_files) != 1 or len(yaml_files) != 1:
+            self.get_logger().error(f"Input directory contains invalid number or db3/yaml files. Make sure it contains one file of that types.")
+            self._exit = True
+            return
 
     def is_ok(self):
         return not self._exit
