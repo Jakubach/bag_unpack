@@ -40,6 +40,10 @@
     ```bash
     source install/setup.bash
     ```
+5. **Launch**:
+    ```bash
+    ros2 launch bag_unpack bag_unpack_launch.py
+    ```
 
 ## Configuration
 
